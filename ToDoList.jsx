@@ -11,7 +11,7 @@ import {
     return (
         <ScrollView>
             {tasks.map((task) => (
-                <Pressable>
+                <Pressable key={task}>
                 <View style={[styles.task, styles.incomplete]}>
                     <Text style={styles.taskText}>{task}</Text>
                 </View>
